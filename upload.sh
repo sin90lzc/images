@@ -140,7 +140,7 @@ cd $IMAGE_GIT_PATH
 
 git add -v ${DIR}
 
-git commit -m 'add file ${DIR}/$RENAME'
+git commit -m "add file ${DIR}/$RENAME"
 
 git push
 
