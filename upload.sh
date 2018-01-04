@@ -22,6 +22,9 @@ IMAGE_GIT_PATH=~/data/images
 
 SEE_HELP=
 
+#public function
+. ~/.bash-functions
+
 #here document
 function help(){
 	cat <<HERE_DOCUMENT
@@ -101,6 +104,10 @@ if [ -z "${URLPATH}" -a -z "${PLANTUML}" -a -z "${LOCALEFILE}" ] ; then
 	exit 1
 fi
 
+if [ -z "${DIR}" ] ; then
+	log -l 1 "请提供<dir in git repository>"
+	exit 1
+fi
 
 GIT_PATH=${IMAGE_GIT_PATH}/${DIR}
 
