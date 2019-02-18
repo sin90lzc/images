@@ -144,7 +144,7 @@ git commit -m "add file ${DIR}/$RENAME"
 
 git push
 
-echo "https://sin90lzc.github.io/images/${DIR}/${RENAME}"
+echo "https://blog.lzc.space/images/${DIR}/${RENAME}"
 
 cd $LASTDIR
 #参数校验
